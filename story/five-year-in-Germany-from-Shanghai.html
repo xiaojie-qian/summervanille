@@ -320,22 +320,46 @@
 -->
 
 
-<div id="disqus_thread"></div>
-<script>
-  
-    var disqus_config = function () {
-    this.page.url = "https://xiaojie-qian.github.io/summervanille/story/five-year-in-Germany-from-Shanghai";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "/summervanille/story/five-year-in-Germany-from-Shanghai"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-xiaojie-qian-github-io-summervanille.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div class="container animate">
+  <!-- begin comments -->
+  <div class="show-comments">
+    <button class="button button--primary" id="show-comments-button" onclick="loadDisqus(); return false;">添加评论</button>
+  </div>
+
+  <div id="disqus_thread" class="post__comments">
+    <div id="disqus_empty"></div>
+  </div>
+
+  <script>
+    var disqus_loaded = false;
+    var disqus_shortname = 'anvod-studio-test';
+    var disqus_container = document.getElementById("disqus_thread");
+
+    function loadDisqus() {
+      if (!disqus_loaded) {
+        disqus_loaded = true;
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src =  'https://https-xiaojie-qian-github-io-summervanille.disqus.com/embed.js';
+        (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(script);
+
+        // Hide the button after opening
+        document.getElementById("show-comments-button").style.display = "none";
+
+        // Show disqus comments
+        disqus_container.classList.add("is-open");
+      }
+    }
+  </script>
+
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" target="_blank">comments powered by Disqus.</a>
+  </noscript>
+  <!-- end comments -->
+</div>
+
 
 
 
