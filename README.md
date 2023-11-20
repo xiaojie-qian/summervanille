@@ -1,2 +1,2 @@
 # summervanille.github.io
-personal website design 
+Use html and css to build my personal website: xiaojie-qian.github.io/summervanille/
