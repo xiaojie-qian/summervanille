@@ -36,6 +36,23 @@
 
 		<style>
 
+
+              /* Style for the back-to-top button */
+        #back-to-top {
+            display: none;
+            position: sticky;
+            bottom: 20px;
+            left: 20px;
+            background-color: #d9534f;
+            color: #fff;
+            font-size: 14px !important;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+
               /* Add some basic styles for the button */
         button {
             background-color: #f5821f; 
@@ -99,7 +116,7 @@
                 </li>
 
                 <li class="nav__item">
-                  <a href="/summervanille/gallery.html" class="nav__link">Project</a>
+                  <a href="/summervanille/gallery.html" class="nav__link">Projects</a>
                 </li>   
 
                 <li class="nav__item dropdown">
@@ -290,7 +307,7 @@ end works -->
       <section class="section section-small animate">
         <div class="section__info">
           <div class="section__head">
-            <h2 class="section__title">Stories</h2>
+            <h2 class="section__title">Blog</h2>
           </div>
 
         </div>
@@ -404,7 +421,7 @@ end blog -->
   <!-- end content -->
 
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-
+<button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
   <!-- begin footer -->
 <footer class="footer">

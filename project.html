@@ -33,6 +33,23 @@
 
 
 		<style>
+
+
+              /* Style for the back-to-top button */
+        #back-to-top {
+            display: none;
+            position: sticky;
+            bottom: 20px;
+            left: 20px;
+            background-color: #d9534f;
+            color: #fff;
+            font-size: 14px !important;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
   
   /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
@@ -71,7 +88,7 @@
                   <a href="/summervanille/story.html" class="nav__link">Blog</a>
                 </li>
                 <li class="nav__item">
-                  <a href="/summervanille/gallery.html" class="nav__link active-link">Project</a>
+                  <a href="/summervanille/gallery.html" class="nav__link active-link">Projects</a>
                 </li>           
                 <li class="nav__item dropdown">
                   <span class="nav__link dropdown-toggle">Pages<i class="ion ion-ios-arrow-down arrow-down"></i></span>
@@ -114,10 +131,10 @@
   <main class="content" aria-label="Content">
     <div class="container">
   <div class="page-section-head">
-    <h1 class="page-title">Gallery</h1>
+    <h1 class="page-title">Projects</h1>
     
        <blockquote>
-       <p class="page-description">In a world where the digital landscape is ever-evolving, I thrive on staying ahead of the curve. With a proven track record in digital marketing, I bring a unique blend of analytical thinking and creative flair to the table. </p></blockquote>
+       <p class="page-description">Embark on a visual journey showcasing my blend of marketing expertise and analytical prowess in action. </p></blockquote>
     
   </div>
 </div>
@@ -238,7 +255,7 @@
 
 
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-
+<button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
 
   <!-- begin footer -->
