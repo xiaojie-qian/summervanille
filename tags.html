@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Summervanille</title>
+    <title>Tags</title>
     <meta name='description' content='Creative Portfolio &bmp; Personal Website for Summervanille'>
 
  <!-- Fonts -->
@@ -43,7 +43,7 @@
             position: sticky;
             bottom: 20px;
             left: 20px;
-            background-color: #d9534f;
+            background-color: #FF69B4;
             color: #fff;
             font-size: 14px !important;
             border: none;
@@ -107,7 +107,34 @@
 
 <body>
 
-  
+      <div id="tagContent">
+        <!-- Content will be dynamically loaded here based on the selected tag -->
+    </div>
+
+    <script>
+        // Function to fetch and display content based on the tag parameter
+        function loadTagContent() {
+            // Get the tag parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const tag = urlParams.get('tag');
+
+            // Use the tag parameter to fetch content from your data source (e.g., an API)
+            // Replace the following line with your actual logic to fetch content
+            const content = fetchContentByTag(tag);
+
+            // Display the fetched content on the page
+            document.getElementById('tagContent').innerHTML = content;
+        }
+
+        // Simulated function to fetch content based on the tag (replace with actual logic)
+        function fetchContentByTag(tag) {
+            // Simulated content for demonstration purposes
+            return `<h1>Posts with tag: ${tag}</h1><p>This is where your filtered content would be displayed.</p>`;
+        }
+
+        // Call the function when the page loads to handle initial tag filtering
+        window.onload = loadTagContent;
+    </script>
 
   <!--begin header-->
     <header class="header">
