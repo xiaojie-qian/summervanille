@@ -1197,17 +1197,27 @@
   
 
 </section>
-end tags 
+end tags -->
 
 <script>
+  // Get the tag name from the query parameter and replace "?" with "#"
   var tag_name = window.location.search.replace("?tag=", "#");
+
+  // Check if tag_name is not empty
   if (tag_name) {
-      var el = document.querySelector(tag_name);
+    // Find the element with the specified tag_name
+    var el = document.querySelector(tag_name);
+
+    // Check if the element is found before trying to remove the class
+    if (el) {
       el.classList.remove("is-hidden");
+    } else {
+      console.error("Element not found with tag name:", tag_name);
     }
+  }
 </script>
   </main>
-  end content -->
+  end content
 
 
 
