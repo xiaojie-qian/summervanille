@@ -185,10 +185,10 @@
           
           <div class="work-category">Analysis and Dashboard</div>
           
-          <h1 class="page-title">Real Estate Dashboard</h1>
+          <h1 class="page-title">Real Estate Investment Analysis and Dashboard</h1>
           
            
-           <p class="work__description" style="font-style: italic; font-size: 14px; color: #555;">Interative Dashboard: whether it is profitable to convert long-term rental properties into short-term properties</p>
+           <p class="work__description" style="font-style: italic; font-size: 14px; color: #555;">Assessing the profitability of converting long-term rentals to short-term</p>
 
           <div class="post-meta__left">
            <div class="post-share">
@@ -218,10 +218,10 @@
             <li class="work-meta__item"><strong>Date:</strong> <span>23 Dec 2022</span></li>
             
             
-            <li class="work-meta__item"><strong>Area:</strong> <span>Finance</span></li>
-            
-            
             <li class="work-meta__item"><strong>Tools:</strong> <span>Excel, SQL, Tableau</span></li>
+
+            <li class="work-meta__item"><strong>Area:</strong><div class="post-tags" style="display: inline;" >
+            <a href="/summervanille/tags/finance.html" class="post-tag">finance</a></li>
             
           </ul>
         </div>
@@ -233,93 +233,86 @@
 <div class="container animate">
 
   <div class="page">
-    <h2> Stakeholders' Interest </h2>
-    <p>Watershed Properties is a residential property management company. They manage several thousand properties in more than 60 different neighborhoods around the United States.
-Watershed currently has a time-sensitive opportunity to explore the short-term rental market with one of its top property owners: whether it is profitable to convert long-term rental properties into short-term properties and how long each property can get its break-even point.</p>
+    <h2> Project Description:</h2>
+    <p>Watershed Properties, a residential property management company overseeing thousands of properties across 60 diverse U.S. neighborhoods, is currently presented with a time-sensitive opportunity. The company is exploring <u>the potential profitability of transitioning long-term rental properties into short-term rentals, along with determining the break-even point for each property.</u> This initiative is in collaboration with one of Watershed's prominent property owners.</p>
 
-<p> Watershed wants to know:
+<p> The key steps in the analysis comprise the following:
   <ul>
     <ol>
-      <li>
-Calculate how much it would cost to convert and maintain each of this client’s properties as a short-term rental.</li>
-<li>Determine the nightly rental price that would maximize the profits from each of these properties, if they were converted to short-term rentals.</li>
-<li>calculate which properties would have increased profits as short-term rentals.</li>
-<li>Determine how profitable, overall, it would be if Watershed converted some of this client's properties into short-term rentals.</li>
-<li>Determine how much cash Watershed would need in order to realize any potential profits from converting the properties.</li>
+      <li><strong>Cost Calculation:</strong> Calculate the expenses involved in converting and maintaining each client property as a short-term rental.</li>
+<li><strong>Maximizing Nightly Rental Price:</strong> Determine the optimal nightly rental price for each property to maximize profits from short-term rentals.</li>
+<li><strong>Profitability Assessment:</strong> Assess potential increased profits for properties converted to short-term rentals by comparing projected incomes.</li>
+<li><strong>Overall Profitability:</strong> Evaluate the overall profitability of converting some client properties into short-term rentals.</li>
+<li><strong>Cash Flow Requirements:</strong>Determine the upfront cash needed for property conversions, including renovations and initial setup costs.</li>
 </ol>
 </ul>
 </p>
 
 
 
-<h2>Database Description</h2>
+<h2>Database Description:</h2>
 
-<p> All the data are derived from real-life situations.</p>
+<p> The data is sourced from real-life scenarios.</p>
 
 <p>
   <ul> 
     <ol>
-      <li>
-      The current monthly rent Watershed charges for all of their client’s 244 properties, as well as the property type and geographic location of those properties.</li>
-      <li>Some general information about examples of short-term rental properties. This information can be used to get a sense of what kind of nightly rental price Watershed’s client’s properties could be listed for, if they were converted to short-term rentals.</li>
-<li>Records about when those short-term rental properties were rented out, so that you can calculate their occupancy rates.</li>
+      <li>The existing monthly rent applied by Watershed to its 244 client properties, alongside details regarding property type and geographic location, is available.</li>
+      <li>Additionally, there is general information on various short-term rental property examples. This data serves as a reference for estimating potential nightly rental prices if Watershed's client properties undergo conversion to short-term rentals.</li>
+<li>Furthermore, records are maintained on the rental periods for these short-term properties, facilitating the calculation of their occupancy rates.</li>
 </ol>
 </ul></p>
 
-<h3>Analysis Summary</h3>
-<p> I modeled the relationship between nightly rental price and occupancy rate for short-term rental properties 
-using data from current short-term rentals managed by other companies and owners. I used this model to 
-predict the short-term rental price that would maximize profits from each of Watershed’s client’s 
-properties if it were managed as a short-term rental property. </p>
-<p>The metrics I report are based on the sum of 
-the forecasted profits that would be gained and the forecasted capital investment that would be needed if 
-my recommendation is followed, after the following are taken into account: </p>
+<h3>Summary of Analysis Results:</h3>
+<p>I conducted a comprehensive analysis by modeling the correlation between nightly rental prices and occupancy rates for short-term rental properties. Utilizing data obtained from existing short-term rentals managed by various companies and owners, I developed a predictive model. This model was then applied to estimate the optimal short-term rental price that would maximize profits for each of Watershed’s client properties, assuming they were managed as short-term rental properties. </p>
+<p>The metrics presented in my report derive from the summation of forecasted profits and anticipated capital investment associated with implementing my recommendation. These calculations consider various factors and are based on the assumption that the outlined recommendations are followed.</p>
 <p> <ul> <li> Initial furnishing costs</li> <li> Upkeep costs</li>  <li> Internet service fees</li><li> Regulatory fees</li> <li> Hospitality charges (including key service 
 and cleaning)</li> <li> Typical duration of stay </li><li> Utilities </li></ul> </p>
-<p>The details of the assumptions I used are provided below (Table 1), followed by a description of the results of my sensitivity analysis.</p>
+<p>Assumption details are outlined in Table 1, followed by a summary of the sensitivity analysis results</p>
 
 
 <img src="/summervanille/assets/images/project/t11.png" loading="lazy" alt="Project" />
 <figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 1 </figcaption>
 <br>
 
-<h3>Analysis Assumptions and Sensitivity Analysis Ranges</h3>
-<p>As agreed, upon at the beginning of the project, some issues were NOT incorporated into the analysis, but could be incorporated in the future to help optimize short-term rental rates or to further refine projected profits (Table 2):</p>
+<h3>Assumption Details and Sensitivity Ranges</h3>
+<p>As per the initial project agreement, certain issues were excluded from the analysis but could be considered in the future for optimizing short-term rental rates or enhancing the precision of projected profits (See Table 2):</p>
 
 <img src="/summervanille/assets/images/project/t12.png" loading="lazy" alt="Project" />
 <figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 2</figcaption>
 <br>
 
-<p>I have created a dashboard that illustrates the effects of changing these assumptions on predicted profits and required capital investment that is available to anybody on the team by request.  The minimum additional profits Watershed could earn when the assumptions were modified within the ranges described above was $91.50K. if all the properties that are “more profitable” as a short-term rental are converted.   The maximum additional profits Watershed could earn when the assumptions were modified within the ranges described above was $247.10K if all the properties that are “more profitable” as a short-term rental are converted.   The modified set of parameters associated with this minimum and maximum value are provided below (Table 3).  Overall, the parameter that affected profits most was $ 155.60K. </p>
+<p>I've developed a dashboard showcasing the impact of adjusting these assumptions on anticipated profits and the required capital investment. This dashboard is available upon request to any team member. Notably, under modified assumptions, Watershed could potentially earn a minimum additional profit of $91.50K by converting 'more profitable' properties to short-term rentals. Conversely, the maximum additional profit could reach $247.10K under the same conditions. The specific parameters corresponding to these extremes are detailed in Table 3. Among these parameters, the most influential on profits was $155.60K.</p>
 
 <img src="/summervanille/assets/images/project/t13.png" loading="lazy" alt="Project" />
 <figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 3</figcaption>
 <br>
 
-<h3>Predictive Modeling Details</h3>
+<h3>Details of Predictive Modeling</h3>
 
-<p>I was provided with four types of information about short-term rentals of the same type (number of bedrooms, apartment or house, kitchen availability, unshared property) and in the same location as Watershed’s client’s 244 properties: a typical short-term nightly rental rate, the corresponding occupancy rate for the property with that rental rate, the 10th percentile nightly rental rate, and the 90th percentile nightly rental rate.  When the typical rental prices were expressed in terms of percentiles relative to properties of the same type and in the same location—but not when they were analyzed as raw dollar values—they correlated linearly with occupancy rates: </p>
+<p>I received information on four aspects of same-type short-term rentals in the same location as Watershed’s client’s 244 properties—number of bedrooms, apartment or house, kitchen availability, and property sharing status. This data included the typical nightly rental rate, the associated occupancy rate, the 10th percentile nightly rate, and the 90th percentile nightly rate. Notably, when typical rental prices were expressed in percentiles relative to similar properties, they exhibited a linear correlation with occupancy rates, although this correlation was not observed when analyzing raw dollar values.</p>
 
 <img src="/summervanille/assets/images/project/p12.png" loading="lazy" alt="Project" />
 <figcaption style="font-style: italic; font-size: 14px; color: #555;">Figure 1: Best-fit Line</figcaption>
 <br>
 
-<p>I used the parameters of the regression line and Excel’s Solver optimization function to find the rental price and occupancy rate that would maximize the profits expected from each of Watershed’s client’s 244 properties.  Any optimized price below the 10th percentile rate was replaced with the 10th percentile rate, and any optimized price above the 90th percentile rate was replaced with the 90th percentile rate, in order to account for lack of data outside of these ranges in the linear model.  These optimized rental rates were entered into a financial cash flow and profit model that computed the expected revenue from each property based on its projected occupancy rate, and the expected costs according to the financial assumptions described above. </p>
+<p>I employed the parameters of the regression line along with Excel’s Solver optimization function to determine the rental price and occupancy rate maximizing profits for each of Watershed’s client’s 244 properties. Optimized prices falling below the 10th percentile rate were adjusted to the 10th percentile rate, and those exceeding the 90th percentile rate were adjusted to the 90th percentile rate, acknowledging the absence of data outside these ranges in the linear model. These optimized rates were then input into a financial cash flow and profit model, calculating expected revenue based on projected occupancy rates and costs as per the financial assumptions outlined. </p>
 
-<h3>Proposal</h3>
-<p>Considering Watershed set 1st year conversion budget as $500,000, I recommend that Watershed to convert 11 long-term properties into short-term properties: W66 and W67 in CA; W107 and W120 in TX; W152, W155, W156, W163 and W164 in FL. </p>
+<h3>Recommendations</h3>
 
-<p>The analysis that serves as the basis of my recommendation indicates that Watershed and its client would benefit from $ 235.60K of increased profits during the first year, and yearly profits of    
-$169.30K every year thereafter if my recommendation is enacted.  The initial capital investment needed to implement my recommendation would be $493,70K. </p>
+<p>Given Watershed's 1st-year conversion budget of $500,000, my recommendation is to convert a total of 11 long-term properties into short-term properties. Specifically, I recommend <u>converting properties W66 and W67 in CA, W107 and W120 in TX, and W152, W155, W156, W163, and W164 in FL.</u> </p>
+
+<p>The foundational analysis supporting my recommendation suggests that Watershed and its client stand to gain an initial increase of $235.60K in profits during the first year, followed by annual profits of $169.30K thereafter, provided the recommendation is implemented. The required initial capital investment for enacting my recommendation is estimated to be $493.70K. </p>
+
+<p>While this analysis is grounded in financial assumptions verified by both company and industry experts, sensitivity analyses indicate that Watershed should enter the short-term rental market with their client, even if initial assumptions undergo potential revisions. The analysis details the methodologies used to reach this conclusion and reports the results of sensitivity analyses, illustrating the impact on expected profits and required capital expenditure when assumptions are modified.</p>
+
+<p>Attached below is the interactive dashboard for convenient reference and review of the results:</p>
 <a href="https://public.tableau.com/app/profile/xiaojie.qian/viz/Real-estate-financial-model/Dashboard1" target="_blank">
   <img src="/summervanille/assets/images/project/p13.png" loading="lazy" alt="Real estate Dashboard" />
-  <figcaption style="font-style: italic; font-size: 14px; color: #555;">Dashboard (Click to inspect the interactive dashboard)</figcaption>
+  <figcaption style="font-style: italic; font-size: 14px; color: #555;">Click to inspect the interactive dashboard</figcaption>
 </a>
 
-<br>
 
-
-<p>This analysis is based on financial assumptions that were confirmed by company and industry experts, but sensitivity analyses indicate that Watershed should enter the short-term rental market with their client, even if these initial assumptions need to be revised.  Below, I describe the analyses I used to arrive at my conclusion, and report the results of my sensitivity analysis that assesses how expected profits and needed capital expenditure would change if my assumptions are modified. </p>
 
 
   </div></div></div>
