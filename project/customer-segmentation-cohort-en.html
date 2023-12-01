@@ -229,7 +229,7 @@
 
 <h2>Cohort Analysis:</h2>
 
-<blockquote></blockquote>
+<blockquote>
 <p> Cohort analysis is indeed a descriptive analytics tool used to group customers into <u> mutually exclusive cohorts</u>, allowing for the measurement and comparison of metrics over time.  the tool is valuable for comparing metrics across both the <strong>product lifecycle</strong> and <strong>customer lifecycles.</strong></p>
 </blockquote>
 
@@ -239,77 +239,58 @@
     <ol>
       <li><strong>Time-based Cohorts:´</strong>Grouping customers based on the time they first engaged with a product or service (e.g., monthly sign-ups).</li>
 <li><strong>Behavior-based Cohorts: </strong>Grouping customers based on specific behaviors or actions they take (e.g., users who made a purchase within a certain timeframe).</li>
-<li><strong>Profitability Assessment:</strong> Assess potential increased profits for properties converted to short-term rentals by comparing projected incomes.</li>
-<li><strong>Overall Profitability:</strong> Evaluate the overall profitability of converting some client properties into short-term rentals.</li>
-<li><strong>Cash Flow Requirements:</strong>Determine the upfront cash needed for property conversions, including renovations and initial setup costs.</li>
+<li><strong>Size-based cohort:</strong> The diverse customer segments are categorized by their spending levels on the company's products or services within a specific timeframe after acquisition. This segmentation can be based on the total amount spent or the product type that constitutes the majority of their order amount during a defined period.</li>
+
 </ol>
 </ul>
+<P>The cohort table is similar to a pivot table. It comprises three elements: the assigned cohort in rows, cohort index in columns, and metrics within the table.</p>
+
+
+<h2>Time-based cohort analysis: Retention Rates</h2>
+<p>
+ Hypothesize about why users are leaving - customer average churn rate. 
+
 </p>
 
+ 
+<img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python" />
 
 
-<h2>Database Description:</h2>
+<h3>1. Build cohort table </h3>
+<h4>Create invoice months and cohort month</h4>
 
+<img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python" />
+<img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python" />
+<p>  The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
+<h4>
+  Assign time offset value
+</h4>
+<img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python" />
+<p> Creating a cohort index calculated in months and offset by 1 involves assigning each customer to a specific cohort based on the month they were acquired and then calculating the number of months since their acquisition, with an offset of 1.</p>
 
+<h4>
+  Count monthly active customers from each cohort 
+</h4>
+<img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python" />
+<p>For each month after the acquisition, count the number of active customers in each cohort. An active customer is one who made at least one purchase in a given month.</p>
 
-<p>
-  <ul> 
-    <ol>
-      <li>The existing monthly rent applied by Watershed to its 244 client properties, alongside details regarding property type and geographic location, is available.</li>
-      <li>Additionally, there is general information on various short-term rental property examples. This data serves as a reference for estimating potential nightly rental prices if Watershed's client properties undergo conversion to short-term rentals.</li>
-<li>Furthermore, records are maintained on the rental periods for these short-term properties, facilitating the calculation of their occupancy rates.</li>
-</ol>
-</ul></p>
+<h3>Cohort metrics:</h3>
 
-<h3>Summary of Analysis Results:</h3>
-<p>I conducted a comprehensive analysis by modeling the correlation between nightly rental prices and occupancy rates for short-term rental properties. Utilizing data obtained from existing short-term rentals managed by various companies and owners, I developed a predictive model. This model was then applied to estimate the optimal short-term rental price that would maximize profits for each of Watershed’s client properties, assuming they were managed as short-term rental properties. </p>
-<p>The metrics presented in my report derive from the summation of forecasted profits and anticipated capital investment associated with implementing my recommendation. These calculations consider various factors and are based on the assumption that the outlined recommendations are followed.</p>
-<p> <ul> <li> Initial furnishing costs</li> <li> Upkeep costs</li>  <li> Internet service fees</li><li> Regulatory fees</li> <li> Hospitality charges (including key service 
-and cleaning)</li> <li> Typical duration of stay </li><li> Utilities </li></ul> </p>
-<p>Assumption details are outlined in Table 1, followed by a summary of the sensitivity analysis results</p>
+<h4>
+  Customer retention rate = (No. of customer at the end of a period - No. of customers acquired during that period )/ No. of customers at the start of the period * 100
+</h4>
+<img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python" />
 
+<h4>
+  
+Cohort quantity metric
+</h4>
+<img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python" />
 
-<img src="/summervanille/assets/images/project/t11.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 1 </figcaption>
-<br>
-
-<h3>Assumption Details and Sensitivity Ranges</h3>
-<p>As per the initial project agreement, certain issues were excluded from the analysis but could be considered in the future for optimizing short-term rental rates or enhancing the precision of projected profits (See Table 2):</p>
-
-<img src="/summervanille/assets/images/project/t12.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 2</figcaption>
-<br>
-
-<p>I've developed a dashboard showcasing the impact of adjusting these assumptions on anticipated profits and the required capital investment. This dashboard is available upon request to any team member. Notably, under modified assumptions, Watershed could potentially earn a minimum additional profit of $91.50K by converting 'more profitable' properties to short-term rentals. Conversely, the maximum additional profit could reach $247.10K under the same conditions. The specific parameters corresponding to these extremes are detailed in Table 3. Among these parameters, the most influential on profits was $155.60K.</p>
-
-<img src="/summervanille/assets/images/project/t13.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 3</figcaption>
-<br>
-
-<h3>Details of Predictive Modeling</h3>
-
-<p>I received information on four aspects of same-type short-term rentals in the same location as Watershed’s client’s 244 properties—number of bedrooms, apartment or house, kitchen availability, and property sharing status. This data included the typical nightly rental rate, the associated occupancy rate, the 10th percentile nightly rate, and the 90th percentile nightly rate. Notably, when typical rental prices were expressed in percentiles relative to similar properties, they exhibited a linear correlation with occupancy rates, although this correlation was not observed when analyzing raw dollar values.</p>
-
-<img src="/summervanille/assets/images/project/p12.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;">Figure 1: Best-fit Line</figcaption>
-<br>
-
-<p>I employed the parameters of the regression line along with Excel’s Solver optimization function to determine the rental price and occupancy rate maximizing profits for each of Watershed’s client’s 244 properties. Optimized prices falling below the 10th percentile rate were adjusted to the 10th percentile rate, and those exceeding the 90th percentile rate were adjusted to the 90th percentile rate, acknowledging the absence of data outside these ranges in the linear model. These optimized rates were then input into a financial cash flow and profit model, calculating expected revenue based on projected occupancy rates and costs as per the financial assumptions outlined. </p>
-
-<h3>Recommendations</h3>
-
-<p>Given Watershed's 1st-year conversion budget of $500,000, my recommendation is to convert a total of 11 long-term properties into short-term properties. Specifically, I recommend <u>converting properties W66 and W67 in CA, W107 and W120 in TX, and W152, W155, W156, W163, and W164 in FL.</u> </p>
-
-<p>The foundational analysis supporting my recommendation suggests that Watershed and its client stand to gain an initial increase of $235.60K in profits during the first year, followed by annual profits of $169.30K thereafter, provided the recommendation is implemented. The required initial capital investment for enacting my recommendation is estimated to be $493.70K. </p>
-
-<p>While this analysis is grounded in financial assumptions verified by both company and industry experts, sensitivity analyses indicate that Watershed should enter the short-term rental market with their client, even if initial assumptions undergo potential revisions. The analysis details the methodologies used to reach this conclusion and reports the results of sensitivity analyses, illustrating the impact on expected profits and required capital expenditure when assumptions are modified.</p>
-
-<p>Attached below is the interactive dashboard for convenient reference and review of the results:</p>
-<a href="https://public.tableau.com/app/profile/xiaojie.qian/viz/Real-estate-financial-model/Dashboard1" target="_blank">
-  <img src="/summervanille/assets/images/project/p13.png" loading="lazy" alt="Real estate Dashboard" />
-  <figcaption style="font-style: italic; font-size: 14px; color: #555;">Click to inspect the interactive dashboard</figcaption>
-</a>
-
+<h3>Visualizing cohort analysis</h3>
+<img src="/summervanille/assets/images/project/p28.png" loading="lazy" alt="python" />
+<img src="/summervanille/assets/images/project/p29.png" loading="lazy" alt="python" />
+<
 
 
 
