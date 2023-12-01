@@ -40,21 +40,6 @@
   <style>
 
 
-              /* Style for the back-to-top button */
-        #back-to-top {
-            display: none;
-            position: sticky;
-            bottom: 20px;
-            left: 20px;
-            background-color: #d9534f;
-            color: #fff;
-            font-size: 14px !important;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
   
   /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
@@ -90,19 +75,20 @@
 
   
 
-  <!-- begin header -->
-<header class="header">
-  <div class="container-big">
-    <div class="row">
-      <div class="header__inner col col-12">
+  <!--begin header-->
+    <header class="header">
+      <div class="container-big">
+        <div class="row">
+          <div class="header__inner col col-12">
 
-        <div class="logo">
-          <a href="/summervanille/about-en.html">
-          
+            <div class="logo">
+              <a class="logo__link" href="/summervanille/about-en">
+ 
             Summervanille
           
           </a>
-        </div>
+      </div>
+
 
         <nav class="main-nav">
           <div class="main-nav__box">
@@ -137,8 +123,8 @@
                 <li class="nav__item dropdown">
                   <span class="nav__link dropdown-toggle">Pages <i class="ion ion-ios-arrow-down arrow-down"></i></span>
                   <div class="dropdown-menu">
-                      <a href="/summervanille/portfolio.html" class="nav__link">Portfolio</a>
-                      <a href="/summervanille/gallery.html" class="nav__link">Gallery</a>
+                      <a href="/summervanille/portfolio-en.html" class="nav__link">Portfolio</a>
+                      <a href="/summervanille/gallery-en.html" class="nav__link">Gallery</a>
                       <a href="/summervanille/contact-en.html" class="nav__link">Contact</a>
                     
                   </div>
@@ -240,15 +226,15 @@
       <li><strong>Time-based Cohorts:´</strong>Grouping customers based on the time they first engaged with a product or service (e.g., monthly sign-ups).</li>
 <li><strong>Behavior-based Cohorts: </strong>Grouping customers based on specific behaviors or actions they take (e.g., users who made a purchase within a certain timeframe).</li>
 <li><strong>Size-based cohort:</strong> The diverse customer segments are categorized by their spending levels on the company's products or services within a specific timeframe after acquisition. This segmentation can be based on the total amount spent or the product type that constitutes the majority of their order amount during a defined period.</li>
-
 </ol>
 </ul>
-<P>The cohort table is similar to a pivot table. It comprises three elements: the assigned cohort in rows, cohort index in columns, and metrics within the table.</p>
 
+<P>The cohort table is similar to a pivot table. It comprises three elements: <u>the assigned cohort in rows</u>,<u> cohort index in columns</u>, and <u>metrics within the table</u>.</p>
 
+<br>
 <h2>Time-based cohort analysis: Retention Rates</h2>
 <p>
- Hypothesize about why users are leaving - customer average churn rate. 
+ <ul><li>Hypothesize about why users are leaving - customer average churn rate. </li> </ul>
 
 </p>
 
@@ -256,41 +242,43 @@
 <img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python cohort" />
 
 
-<h3>1. Build cohort table </h3>
-<h4>Create invoice months and cohort month</h4>
-
+<h3>Build cohort table</h3>
+<h4><ul><li>Create invoice months and cohort month </li></ul></h4> <p>The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
 <img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python cohort" />
-<p>  The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
-<h4>
+
+
+<h4> <ul><li>
   Assign time offset value
-</h4>
-<img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
+</li></ul></h4>
 <p> Creating a cohort index calculated in months and offset by 1 involves assigning each customer to a specific cohort based on the month they were acquired and then calculating the number of months since their acquisition, with an offset of 1.</p>
+<img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
 
-<h4>
+<h4> <ul><li>
   Count monthly active customers from each cohort 
-</h4>
-<img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
+</li></ul></h4>
 <p>For each month after the acquisition, count the number of active customers in each cohort. An active customer is one who made at least one purchase in a given month.</p>
+<img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
 
-<h3>Cohort metrics:</h3>
 
-<h4>
-  Customer retention rate = (No. of customer at the end of a period - No. of customers acquired during that period )/ No. of customers at the start of the period * 100
-</h4>
+<h3>Cohort metrics</h3>
+<h4><ul><li>
+Customer retention rate </li></ul></h4>
+
+<P>
+  Customer retention rate = (No. of customer at the end of a period - No. of customers acquired during that period )/ No. of customers at the start of the period * 100</P>
 <img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python cohort" />
 
-<h4>
-  
-Cohort quantity metric
+<h4><ul><li>
+  Cohort quantity metric </ul></li>
 </h4>
 <img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python cohort" />
 
-<h3>Visualizing cohort analysis</h3>
+<h3> Visualizing cohort analysis </h3>
 <img src="/summervanille/assets/images/project/p28.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p29.png" loading="lazy" alt="python cohort" />
 
+<hr />
 
 <h2>Size-based cohort analysis: Daily turnover</h2>
 <img src="/summervanille/assets/images/project/p30.png" loading="lazy" alt="python cohort" />
@@ -341,7 +329,6 @@ Cohort quantity metric
   end content -->
 
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-<button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
   <!-- begin footer -->
 <footer class="footer">
