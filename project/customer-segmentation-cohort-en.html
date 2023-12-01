@@ -202,7 +202,8 @@
 <div class="container animate">
 
   <div class="page">
-    <h2> Project Goals:</h2>
+
+    <h2> Project Goals</h2>
     <p> The data is derived from real-life scenarios of an online company.</p>
 <ul>
    <li><strong>Assess Business Health: </strong> Increasing revenue, even without acquiring new customers, is a key indicator of a healthy business.</li>
@@ -213,7 +214,7 @@
 </ul>
 
 
-<h2>Cohort Analysis:</h2>
+<h2>Cohort Analysis</h2>
 
 <blockquote>
 <p> Cohort analysis is indeed a descriptive analytics tool used to group customers into <u> mutually exclusive cohorts</u>, allowing for the measurement and comparison of metrics over time.  the tool is valuable for comparing metrics across both the <strong>product lifecycle</strong> and <strong>customer lifecycles.</strong></p>
@@ -231,36 +232,56 @@
 
 <P>The cohort table is similar to a pivot table. It comprises three elements: <u>the assigned cohort in rows</u>,<u> cohort index in columns</u>, and <u>metrics within the table</u>.</p>
 
+
+
+
+<h2>How to perform a cohort analysis: steps and process </h2>
+<ol>
+  <li><strong> Specifiy your goals</strong> </li><p>The first step is to have clarity in your goals. What do you want to understand from the data that you have? What do you want to learn from this analysis and how will it help your business? </p>
+  <p>Do you want to understand more about customer behavior, like how they landed on your website or how much time they spent on an app? Or do you want to understand at which point they are churning? These answers will help you identify which cohorts to track and which metrics to choose.</p>
+  <li><strong>  Choose the metrices you want to measure</strong> </li>
+  <p>Conversion rate</p>
+<p>Retention rate</p>
+<p>Average purchase value </p>
+<p>Customer lifetime value </p>
+<p>Engagement rate </p>
+<p>Churn rate</p>
+<p>Customer satisfaction </p>
+  <li><strong> Define relevant cohorts and gather data</strong> </li><p>You need to consolidate relevant data like the date of first purchase or the total amount spent. </p>
+  <li><strong> Analyze and interpret data</strong> </li><P>Once you have collected the data, you can use different methods of analysis like time series or regression to spot patterns. This will allow you to notice any critical changes that may have happened. </P>
+
+
+
 <br>
 <h2>Time-based cohort analysis: Retention Rates</h2>
 <p>
  <ul><li>Hypothesize about why users are leaving - customer average churn rate. </li> </ul>
-
 </p>
 
  
 <img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python cohort" />
-
+<p></p>
 
 <h3>Build cohort table</h3>
 <h4><ul><li>Create invoice months and cohort month </li></ul></h4> <p>The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
 <img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python cohort" />
 
-
+<p></p>
 <h4> <ul><li>
   Assign time offset value
 </li></ul></h4>
 <p> Creating a cohort index calculated in months and offset by 1 involves assigning each customer to a specific cohort based on the month they were acquired and then calculating the number of months since their acquisition, with an offset of 1.</p>
 <img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
 
+<p></p>
 <h4> <ul><li>
   Count monthly active customers from each cohort 
 </li></ul></h4>
 <p>For each month after the acquisition, count the number of active customers in each cohort. An active customer is one who made at least one purchase in a given month.</p>
 <img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
 
-
+<p></p>
 <h3>Cohort metrics</h3>
 <h4><ul><li>
 Customer retention rate </li></ul></h4>
@@ -269,11 +290,13 @@ Customer retention rate </li></ul></h4>
   Customer retention rate = (No. of customer at the end of a period - No. of customers acquired during that period )/ No. of customers at the start of the period * 100</P>
 <img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python cohort" />
 
+<p></p>
 <h4><ul><li>
   Cohort quantity metric </ul></li>
 </h4>
 <img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python cohort" />
 
+<p></p>
 <h3> Visualizing cohort analysis </h3>
 <img src="/summervanille/assets/images/project/p28.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p29.png" loading="lazy" alt="python cohort" />
@@ -286,6 +309,43 @@ Customer retention rate </li></ul></h4>
 <img src="/summervanille/assets/images/project/p33.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p34.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p35.png" loading="lazy" alt="python cohort" />
+
+<p></p>
+<h2>More Application of Cohort Analysis</h2>
+<ol>
+    <li><strong>Customer Retention Analysis:</strong>
+        <p>Cohort analysis helps businesses track and understand customer retention over time. By grouping customers based on their acquisition or conversion dates, companies can assess how well they retain customers and identify patterns or trends in customer behavior.</p></li>
+
+    <li><strong>Product Performance Analysis:</strong>
+        <p>Businesses can use cohort analysis to evaluate the performance of specific products or services. By grouping customers who purchased a particular product within the same time frame, companies can assess the product's lifecycle, customer loyalty, and overall impact on revenue.</p></li>
+
+    <li><strong>Marketing Campaign Effectiveness:</strong>
+        <p>Cohort analysis allows marketers to assess the success of different marketing campaigns by grouping customers based on the time they were acquired through those campaigns. This helps in understanding which campaigns contribute most effectively to customer acquisition and long-term value.</p></li>
+
+<li><strong>User Engagement and Churn:</strong>
+        <p>In the context of online platforms, cohort analysis is useful for tracking user engagement and identifying potential churn patterns. By analyzing cohorts of users based on sign-up dates, businesses can optimize user experiences and implement targeted strategies to reduce churn.</p></li>
+
+<li><strong>Subscription Services Analysis:</strong>
+        <p>Cohort analysis is particularly relevant for subscription-based businesses. It helps in evaluating subscriber retention, understanding user behavior over subscription periods, and identifying factors influencing subscription renewals or cancellations.</p></li>
+
+<li><strong>Employee Performance and Training:</strong>
+        <p>Beyond customer-related applications, cohort analysis can be applied to employee performance. For example, grouping employees based on their start dates to assess training effectiveness, retention, and performance over time.</p></li>
+
+<li><strong>Financial Analysis:</strong>
+        <p>In finance, cohort analysis can be applied to evaluate the performance of financial products, investment portfolios, or the effectiveness of financial strategies. Cohorts may be based on the time of investment or the introduction of a financial product.</p></li>
+
+
+<li><strong>E-learning and Education:</strong>
+        <p>Cohort analysis is beneficial in educational settings to analyze student performance, engagement, and course effectiveness. Cohorts can be formed based on enrollment dates or the introduction of new curriculum elements.</p></li>
+
+<li><strong>Mobile App User Analysis:</strong>
+        <p>For mobile applications, cohort analysis helps in understanding user behavior, feature adoption, and retention. Cohorts based on app download dates can reveal insights into how different user groups engage with the app over time.</p></li>
+
+   <li><strong>Healthcare and Patient Outcomes:</strong>
+        <p>In healthcare, cohort analysis can be applied to study patient outcomes based on the time of diagnosis, treatment, or intervention. This can assist in improving patient care and treatment strategies.</p></li>
+
+</ol>
+
 
   </div></div></div>
 

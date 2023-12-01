@@ -40,20 +40,6 @@
   <style>
 
 
-              /* Style for the back-to-top button */
-        #back-to-top {
-            display: none;
-            position: sticky;
-            bottom: 20px;
-            left: 20px;
-            background-color: #d9534f;
-            color: #fff;
-            font-size: 14px !important;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
 
   
   /*!------------------------------------------------------------------
@@ -90,19 +76,20 @@
 
   
 
-  <!-- begin header -->
-<header class="header">
-  <div class="container-big">
-    <div class="row">
-      <div class="header__inner col col-12">
+  <!--begin header-->
+    <header class="header">
+      <div class="container-big">
+        <div class="row">
+          <div class="header__inner col col-12">
 
-        <div class="logo">
-          <a href="/summervanille/about.html">
-          
+            <div class="logo">
+              <a class="logo__link" href="/summervanille/about">
+ 
             Summervanille
           
           </a>
-        </div>
+      </div>
+
 
         <nav class="main-nav">
           <div class="main-nav__box">
@@ -217,99 +204,152 @@
 <div class="container animate">
 
   <div class="page">
-    <h2> Project Goals:</h2>
-    <p> The data is derived from real-life scenarios of an online company.</p>
+
+    <h2>项目目标</h2>
+<p>数据来源于在线公司的实际场景。</p>
+
 <ul>
-   <li><strong>Assess Business Health: </strong> Increasing revenue, even without acquiring new customers, is a key indicator of a healthy business.</li>
-<li><strong>Understand Customer Behavior: </strong>Gain insights into customer behavior to inform strategic decision-making.</li>
-<li><strong>Boost Customer Retention:  </strong>Create targeted marketing campaigns and personalized experiences through the effective segmentation of user groups and cohorts.</li>
-<li><strong>Boost Customer Retention: </strong>Analyze retention rates and identify potential churn risks to proactively enhance customer experiences.</li>
-<li><strong>Optimize App for Increased Interest: </strong>Identify trends and patterns in the customer lifecycle to optimize the user experience and increase customer lifetime value.</li>
+    <li><strong>评估业务健康：</strong>增加收入，即使不获取新客户，是业务健康的关键指标。</li>
+    <li><strong>了解客户行为：</strong>深入了解客户行为，为战略决策提供见解。</li>
+    <li><strong>提升客户保留：</strong>通过对用户群和同期进行有效分组，创建有针对性的营销活动和个性化体验，提升客户保留率。</li>
+    <li><strong>分析保留率：</strong>分析保留率，识别潜在的流失风险，积极提升客户体验。</li>
+    <li><strong>优化应用以增加兴趣：</strong>识别客户生命周期中的趋势和模式，优化用户体验，提高客户生命周期价值。</li>
 </ul>
 
 
-<h2>Cohort Analysis:</h2>
+<h2>同期群分析</h2>
 
-<blockquote></blockquote>
-<p> Cohort analysis is indeed a descriptive analytics tool used to group customers into <u> mutually exclusive cohorts</u>, allowing for the measurement and comparison of metrics over time.  the tool is valuable for comparing metrics across both the <strong>product lifecycle</strong> and <strong>customer lifecycles.</strong></p>
+<blockquote>
+    <p>群体分析确实是一种用于将客户分组为<u>相互独立的群体</u>的描述性分析工具，允许随时间测量和比较指标。该工具对比较产品生命周期和客户生命周期中的指标非常有价值。</p>
 </blockquote>
 
-<h2> Types of Cohorts</h2>
-  <p>Cohorts can be defined based on various criteria, and the type of cohort often depends on the specific context of analysis. </p>
-  
-    <ol>
-      <li><strong>Time-based Cohorts:´</strong>Grouping customers based on the time they first engaged with a product or service (e.g., monthly sign-ups).</li>
-<li><strong>Behavior-based Cohorts: </strong>Grouping customers based on specific behaviors or actions they take (e.g., users who made a purchase within a certain timeframe).</li>
-<li><strong>Profitability Assessment:</strong> Assess potential increased profits for properties converted to short-term rentals by comparing projected incomes.</li>
-<li><strong>Overall Profitability:</strong> Evaluate the overall profitability of converting some client properties into short-term rentals.</li>
-<li><strong>Cash Flow Requirements:</strong>Determine the upfront cash needed for property conversions, including renovations and initial setup costs.</li>
+
+<h2>群体的类型</h2>
+<p>群体可以根据不同的标准来定义，而群体的类型通常取决于分析的具体上下文。</p>
+
+<ol>
+  <li><strong>基于时间的群体：</strong>根据客户首次与产品或服务互动的时间进行分组（例如，每月注册）。</li>
+  <li><strong>基于行为的群体：</strong>根据客户采取的特定行为或操作进行分组（例如，在一定时间内进行购买的用户）。</li>
+  <li><strong>基于规模的群体：</strong>根据客户在公司产品或服务上的支出水平在获取后的特定时间范围内进行分组。该分组可以基于总支出金额或在定义的时期内构成其订单金额大部分的产品类型。</li>
 </ol>
-</ul>
+
+<p>群体表类似于数据透视表。它包括三个元素：<u>按行分配的群体</u>、<u>按列分配的群体指数</u>和<u>表格内的指标</u>。</p>
+
+<h2>如何进行群体分析：步骤和过程</h2>
+<ol>
+  <li><strong>明确您的目标</strong></li>
+  <p>第一步是明确您的目标。您想从您手中的数据中了解什么？您希望从这项分析中学到什么，以及它将如何帮助您的业务？</p>
+  <p>您想更深入地了解客户行为，比如他们是如何访问您的网站的，或者他们在应用上花费了多少时间？或者您想了解他们何时开始流失？这些答案将帮助您确定要跟踪哪些群体以及选择哪些指标。</p>
+  <li><strong>选择要测量的指标</strong></li>
+  <p>转化率</p>
+  <p>保留率</p>
+  <p>平均购买价值</p>
+  <p>客户生命周期价值</p>
+  <p>参与率</p>
+  <p>流失率</p>
+  <p>客户满意度</p>
+  <li><strong>定义相关的群体并收集数据</strong></li>
+  <p>您需要整合相关数据，如首次购买日期或总支出金额。</p>
+  <li><strong>分析和解释数据</strong></li>
+  <p>一旦您收集到数据，您可以使用不同的分析方法，如时间序列或回归，来发现模式。这将使您能够注意到可能发生的任何重大变化。</p>
+</ol>
+
+
+<br>
+<h2>基于时间的群体分析：保留率</h2>
+<p>
+  <ul><li>猜测用户离开的原因 - 客户平均流失率。</li></ul>
 </p>
 
+<img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python cohort" />
+<p></p>
 
+<h3>构建群体表</h3>
+<h4><ul><li>创建发票月份和群体月份</li></ul></h4> <p>群体月份被定义为获取月份，即每位客户的最早发票月份。</p>
+<img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python cohort" />
 
-<h2>Database Description:</h2>
+<p></p>
+<h4> <ul><li>
+  分配时间偏移值
+</li></ul></h4>
+<p>创建按月计算并偏移1个月的群体指数，涉及将每位客户分配到基于其获取月份的特定群体，然后计算自获取以来的月份数，偏移1个月。</p>
+<img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
 
+<p></p>
+<h4> <ul><li>
+  计算每个群体的每月活跃客户数量
+</li></ul></h4>
+<p>在获取后的每个月，统计每个群体中活跃客户的数量。活跃客户是指在给定月份至少进行一次购买的客户。</p>
+<img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
 
+<p></p>
+<h3>群体指标</h3>
+<h4><ul><li>
+客户保留率</li></ul></h4>
 
 <p>
-  <ul> 
-    <ol>
-      <li>The existing monthly rent applied by Watershed to its 244 client properties, alongside details regarding property type and geographic location, is available.</li>
-      <li>Additionally, there is general information on various short-term rental property examples. This data serves as a reference for estimating potential nightly rental prices if Watershed's client properties undergo conversion to short-term rentals.</li>
-<li>Furthermore, records are maintained on the rental periods for these short-term properties, facilitating the calculation of their occupancy rates.</li>
+  客户保留率 = （期末客户数 - 该期间获得的客户数）/ 期初客户数 * 100
+</p>
+<img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python cohort" />
+
+<p></p>
+<h4><ul><li>
+  群体数量指标 </ul></li>
+</h4>
+<img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python cohort" />
+
+<p></p>
+<h3>可视化群体分析</h3>
+<img src="/summervanille/assets/images/project/p28.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p29.png" loading="lazy" alt="python cohort" />
+
+
+<hr />
+
+<h2>基于规模的群体分析：日营业额</h2>
+<img src="/summervanille/assets/images/project/p30.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p31.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p33.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p34.png" loading="lazy" alt="python cohort" />
+<img src="/summervanille/assets/images/project/p35.png" loading="lazy" alt="python cohort" />
+
+<p></p>
+<h2>更多群体分析的应用</h2>
+<ol>
+    <li><strong>客户保留分析：</strong>
+        <p>群体分析有助于企业随时间跟踪和了解客户的保留情况。通过根据客户获取或转化日期对客户进行分组，公司可以评估他们的客户保留情况，并识别客户行为的模式或趋势。</p></li>
+
+    <li><strong>产品性能分析：</strong>
+        <p>企业可以使用群体分析来评估特定产品或服务的性能。通过将在同一时间范围内购买特定产品的客户进行分组，公司可以评估产品的生命周期、客户忠诚度以及对总收入的整体影响。</p></li>
+
+    <li><strong>营销活动效果：</strong>
+        <p>群体分析允许营销人员通过根据客户通过这些营销活动获得的时间来对客户进行分组，从而评估不同营销活动的成功。这有助于了解哪些活动对客户获取和长期价值做出了最有效的贡献。</p></li>
+
+    <li><strong>用户参与和流失：</strong>
+        <p>在在线平台的背景下，群体分析对于追踪用户参与和识别潜在流失模式非常有用。通过根据注册日期对用户进行分组，企业可以优化用户体验并实施有针对性的策略以减少流失。</p></li>
+
+    <li><strong>订阅服务分析：</strong>
+        <p>群体分析对于基于订阅的业务尤为重要。它有助于评估订户的保留情况，了解用户在订阅期内的行为，并识别影响订阅续订或取消的因素。</p></li>
+
+    <li><strong>员工绩效和培训：</strong>
+        <p>除了与客户相关的应用之外，群体分析还可以应用于员工绩效。例如，根据员工的入职日期对其进行分组，以评估培训的有效性、员工保留率和绩效。</p></li>
+
+    <li><strong>财务分析：</strong>
+        <p>在金融领域，群体分析可用于评估金融产品、投资组合的绩效，或者金融策略的有效性。群体可以基于投资时间或金融产品的推出时间。</p></li>
+
+    <li><strong>在线教育与学习：</strong>
+        <p>在教育环境中，群体分析有助于分析学生的表现、参与度和课程的有效性。群体可以基于注册日期或新课程元素的引入进行形成。</p></li>
+
+    <li><strong>移动应用用户分析：</strong>
+        <p>对于移动应用，群体分析有助于了解用户行为、功能采用率和保留情况。基于应用下载日期的群体可以揭示不同用户群体如何随时间与应用互动的见解。</p></li>
+
+    <li><strong>医疗保健和患者结果：</strong>
+        <p>在医疗领域，群体分析可用于研究基于诊断、治疗或干预时间的患者结果。这有助于改进患者护理和治疗策略。</p></li>
+
 </ol>
-</ul></p>
-
-<h3>Summary of Analysis Results:</h3>
-<p>I conducted a comprehensive analysis by modeling the correlation between nightly rental prices and occupancy rates for short-term rental properties. Utilizing data obtained from existing short-term rentals managed by various companies and owners, I developed a predictive model. This model was then applied to estimate the optimal short-term rental price that would maximize profits for each of Watershed’s client properties, assuming they were managed as short-term rental properties. </p>
-<p>The metrics presented in my report derive from the summation of forecasted profits and anticipated capital investment associated with implementing my recommendation. These calculations consider various factors and are based on the assumption that the outlined recommendations are followed.</p>
-<p> <ul> <li> Initial furnishing costs</li> <li> Upkeep costs</li>  <li> Internet service fees</li><li> Regulatory fees</li> <li> Hospitality charges (including key service 
-and cleaning)</li> <li> Typical duration of stay </li><li> Utilities </li></ul> </p>
-<p>Assumption details are outlined in Table 1, followed by a summary of the sensitivity analysis results</p>
 
 
-<img src="/summervanille/assets/images/project/t11.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 1 </figcaption>
-<br>
-
-<h3>Assumption Details and Sensitivity Ranges</h3>
-<p>As per the initial project agreement, certain issues were excluded from the analysis but could be considered in the future for optimizing short-term rental rates or enhancing the precision of projected profits (See Table 2):</p>
-
-<img src="/summervanille/assets/images/project/t12.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 2</figcaption>
-<br>
-
-<p>I've developed a dashboard showcasing the impact of adjusting these assumptions on anticipated profits and the required capital investment. This dashboard is available upon request to any team member. Notably, under modified assumptions, Watershed could potentially earn a minimum additional profit of $91.50K by converting 'more profitable' properties to short-term rentals. Conversely, the maximum additional profit could reach $247.10K under the same conditions. The specific parameters corresponding to these extremes are detailed in Table 3. Among these parameters, the most influential on profits was $155.60K.</p>
-
-<img src="/summervanille/assets/images/project/t13.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;"> Tabel 3</figcaption>
-<br>
-
-<h3>Details of Predictive Modeling</h3>
-
-<p>I received information on four aspects of same-type short-term rentals in the same location as Watershed’s client’s 244 properties—number of bedrooms, apartment or house, kitchen availability, and property sharing status. This data included the typical nightly rental rate, the associated occupancy rate, the 10th percentile nightly rate, and the 90th percentile nightly rate. Notably, when typical rental prices were expressed in percentiles relative to similar properties, they exhibited a linear correlation with occupancy rates, although this correlation was not observed when analyzing raw dollar values.</p>
-
-<img src="/summervanille/assets/images/project/p12.png" loading="lazy" alt="Project" />
-<figcaption style="font-style: italic; font-size: 14px; color: #555;">Figure 1: Best-fit Line</figcaption>
-<br>
-
-<p>I employed the parameters of the regression line along with Excel’s Solver optimization function to determine the rental price and occupancy rate maximizing profits for each of Watershed’s client’s 244 properties. Optimized prices falling below the 10th percentile rate were adjusted to the 10th percentile rate, and those exceeding the 90th percentile rate were adjusted to the 90th percentile rate, acknowledging the absence of data outside these ranges in the linear model. These optimized rates were then input into a financial cash flow and profit model, calculating expected revenue based on projected occupancy rates and costs as per the financial assumptions outlined. </p>
-
-<h3>Recommendations</h3>
-
-<p>Given Watershed's 1st-year conversion budget of $500,000, my recommendation is to convert a total of 11 long-term properties into short-term properties. Specifically, I recommend <u>converting properties W66 and W67 in CA, W107 and W120 in TX, and W152, W155, W156, W163, and W164 in FL.</u> </p>
-
-<p>The foundational analysis supporting my recommendation suggests that Watershed and its client stand to gain an initial increase of $235.60K in profits during the first year, followed by annual profits of $169.30K thereafter, provided the recommendation is implemented. The required initial capital investment for enacting my recommendation is estimated to be $493.70K. </p>
-
-<p>While this analysis is grounded in financial assumptions verified by both company and industry experts, sensitivity analyses indicate that Watershed should enter the short-term rental market with their client, even if initial assumptions undergo potential revisions. The analysis details the methodologies used to reach this conclusion and reports the results of sensitivity analyses, illustrating the impact on expected profits and required capital expenditure when assumptions are modified.</p>
-
-<p>Attached below is the interactive dashboard for convenient reference and review of the results:</p>
-<a href="https://public.tableau.com/app/profile/xiaojie.qian/viz/Real-estate-financial-model/Dashboard1" target="_blank">
-  <img src="/summervanille/assets/images/project/p13.png" loading="lazy" alt="Real estate Dashboard" />
-  <figcaption style="font-style: italic; font-size: 14px; color: #555;">Click to inspect the interactive dashboard</figcaption>
-</a>
 
 
 
@@ -356,7 +396,7 @@ and cleaning)</li> <li> Typical duration of stay </li><li> Utilities </li></ul> 
   end content -->
 
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-<button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
 
   <!-- begin footer -->
 <footer class="footer">
