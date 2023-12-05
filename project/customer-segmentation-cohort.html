@@ -257,37 +257,44 @@
 
 
 <br>
-<h2>基于时间的群体分析：保留率</h2>
-<p>
-  <ul><li>猜测用户离开的原因 - 客户平均流失率。</li></ul>
+<h2>基于时间的群体分析</h2>
+<p> 
+  <ol>
+    <li>根据客户首次购买的月份将客户分成不同的获取阶段。</li>
+    <li>为客户的每次购买分配阶段指数 - 距离第一次交易（获取）的月数。</li>
+    <li>根据距离第一次购买的相对时间段标记每笔交易。</li>
+    <li>计算指标，如留存率、平均速度值。</li>
+    <li>构建热图。</li>
+  </ol>
 </p>
 
+<ul><li>观察下数据</ul></li>
 <img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python cohort" />
 <p></p>
 
 <h3>构建群体表</h3>
-<h4><ul><li>创建发票月份和群体月份</li></ul></h4> <p>群体月份被定义为获取月份，即每位客户的最早发票月份。</p>
+<ul><li>创建发票月份和群体月份</li></ul> <p>群体月份被定义为获取月份，即每位客户的最早发票月份。</p>
 <img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4> <ul><li>
+<ul><li>
   分配时间偏移值
-</li></ul></h4>
+</li></ul>
 <p>创建按月计算并偏移1个月的群体指数，涉及将每位客户分配到基于其获取月份的特定群体，然后计算自获取以来的月份数，偏移1个月。</p>
 <img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4> <ul><li>
+<ul><li>
   计算每个群体的每月活跃客户数量
-</li></ul></h4>
+</li></ul>
 <p>在获取后的每个月，统计每个群体中活跃客户的数量。活跃客户是指在给定月份至少进行一次购买的客户。</p>
 <img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
 
 <p></p>
 <h3>群体指标</h3>
-<h4><ul><li>
-客户保留率</li></ul></h4>
+<ul><li>
+客户保留率</li></ul>
 
 <p>
   客户保留率 = （期末客户数 - 该期间获得的客户数）/ 期初客户数 * 100
@@ -295,9 +302,9 @@
 <img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4><ul><li>
+<ul><li>
   群体数量指标 </ul></li>
-</h4>
+
 <img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python cohort" />
 
 <p></p>

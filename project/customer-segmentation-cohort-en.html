@@ -254,47 +254,51 @@
 
 
 <br>
-<h2>Time-based cohort analysis: Retention Rates</h2>
-<p>
- <ul><li>Hypothesize about why users are leaving - customer average churn rate. </li> </ul>
+<h2>Example: Time-based cohort analysis</h2>
+<p> 
+ <ol><li> Segment customers into acquistion cohorts based on the month they made their first purchase. </li>
+  <li> Assign cohort index to each purchase of the customer - the number of months since the first transaction (acqusition). </li>
+  <li> Mark each transaction based on its relative time period since the first purchase.</li>
+  <li> Calculate metrics, such as retetnion, average speed value. </li>
+  <li> Build the heatmap</li></ol>
 </p>
 
+<ul><li>Look at the date </ul></li>
  
 <img src="/summervanille/assets/images/project/p21.png" loading="lazy" alt="python cohort" />
 <p></p>
 
 <h3>Build cohort table</h3>
-<h4><ul><li>Create invoice months and cohort month </li></ul></h4> <p>The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
+<ul><li>Create invoice months and cohort month </li></ul> <p>The cohort month is defined as the acquisition month, which is the oldest invoice month of each customer. </p>
 <img src="/summervanille/assets/images/project/p22.png" loading="lazy" alt="python cohort" />
 <img src="/summervanille/assets/images/project/p23.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4> <ul><li>
+<ul><li>
   Assign time offset value
-</li></ul></h4>
+</li></ul>
 <p> Creating a cohort index calculated in months and offset by 1 involves assigning each customer to a specific cohort based on the month they were acquired and then calculating the number of months since their acquisition, with an offset of 1.</p>
 <img src="/summervanille/assets/images/project/p24.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4> <ul><li>
+<ul><li>
   Count monthly active customers from each cohort 
-</li></ul></h4>
+</li></ul>
 <p>For each month after the acquisition, count the number of active customers in each cohort. An active customer is one who made at least one purchase in a given month.</p>
 <img src="/summervanille/assets/images/project/p25.png" loading="lazy" alt="python cohort" />
 
 <p></p>
 <h3>Cohort metrics</h3>
-<h4><ul><li>
-Customer retention rate </li></ul></h4>
+<ul><li>
+Customer retention rate </li></ul>
 
 <P>
   Customer retention rate = (No. of customer at the end of a period - No. of customers acquired during that period )/ No. of customers at the start of the period * 100</P>
 <img src="/summervanille/assets/images/project/p26.png" loading="lazy" alt="python cohort" />
 
 <p></p>
-<h4><ul><li>
+<ul><li>
   Cohort quantity metric </ul></li>
-</h4>
 <img src="/summervanille/assets/images/project/p27.png" loading="lazy" alt="python cohort" />
 
 <p></p>
